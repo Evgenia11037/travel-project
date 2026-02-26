@@ -1,0 +1,93 @@
+/* Основні налаштування */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Шапка */
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF7F50;
+}
+
+.menu-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Секція Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Секція Напрямки */
+.destinations-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Футер */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}/* Це змусить всі картинки в картках бути однакового розміру */
+.destination-card img, .card-item img {
+    width: 100%;
+    height: 250px;     /* Можеш змінити цифру, щоб було вище або нижче */
+    object-fit: cover; /* Це обріже краї картинки, щоб вона не розтягувалася */
+    border-radius: 10px 10px 0 0; /* Закруглення тільки зверху */
+}
+
+/* Якщо іконки на головній занадто великі, додай це: */
+.card-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
